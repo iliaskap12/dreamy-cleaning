@@ -12,21 +12,22 @@
    ========================================================================== */
 
 :root {
-  --brand-color: #9F2171ff;
-  --complimentary-color: #044182ff;
-  --accent-color: #9105B8ff;
-  --title-color: #4C2E4Fff;
-  --link-color-hover: #515D1Bff;
-  --accent-color-3: #066063ff;
-  --background-light: #fdfdfdff;
+  --brand-color: #FA5FC1ff;
+  --accent-color: #F0B6DBff;
+  --complimentary-color: #DDEF53ff;
+  --text-color: #080808ff;
+  --title-color: #4B2C4Eff;
+  --link-color: #066063ff;
+  --link-color-hover: #990899ff;
+  --background-color: #fafafaff;
 
   --font-size: calc(1em + (48 - 14)*((100vw - 320px)/(7680 - 320 - 16)));
   --line-height: calc(1.3em + (1.5 - 1.2)*((100vw - 320px)/(7680 - 320 - 16)));
 }
 
 html {
-  color: var(--brand-color);
-  background-color: var(--background-light);
+  color: var(--text-color);
+  background-color: var(--background-color);
   font-size: var(--font-size);
   line-height: var(--line-height);
   scroll-behavior: smooth;
@@ -43,14 +44,14 @@ html {
  */
 
 ::-moz-selection {
-  background: var(--brand-color);
-  color: var(--background-light);
+  background: var(--background-color);
+  color: var(--text-color);
   text-shadow: none;
 }
 
 ::selection {
-  background: var(--brand-color);
-  color: var(--background-light);
+  background: var(--background-color);
+  color: var(--text-color);
   text-shadow: none;
 }
 
@@ -59,11 +60,11 @@ html {
   width: 16px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent-color);
+  background-color: var(--complimentary-color);
   border-radius: 0.4em;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--complimentary-color);
+  background-color: var(--brand-color);
 }
 
 
